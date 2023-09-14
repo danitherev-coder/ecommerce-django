@@ -25,4 +25,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('store/', include('storeApp.urls')),
+    path('cart/', include('cartsApp.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # para que se pueda ver las imagenes en el navegador
+ 
